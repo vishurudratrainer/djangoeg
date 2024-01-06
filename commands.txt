@@ -1,0 +1,9 @@
+django-admin startproject hw
+py manage.py runserver
+py manage.py startapp members
+for template:
+py manage.py migrate
+
+for db
+py manage.py makemigrations members
+py manage.py sqlmigrate members 0001

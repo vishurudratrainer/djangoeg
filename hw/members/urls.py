@@ -12,6 +12,7 @@ urlpatterns = [
     path('members/', views.members, name='members'),
     path('sample/', views.sample, name='sample'),
     path('allmembers/', views.allmembers, name='allmembers'),
-    path('members/details/<int:id>', views.details, name='details'),
+    path('details/<int:id>', views.details, name='details'),
+    path('saveMember/', views.saveMember, name='saveMember'),
 
 ]

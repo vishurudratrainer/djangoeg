@@ -1,0 +1,65 @@
+<h1>Counter starting from 1</h1>
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.counter }}{{x}}</li>
+  {% endfor %}
+</ul>
+
+<h1>Counter starting from 0</h1>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.counter0 }}</li>
+  {% endfor %}
+</ul> 
+
+<h1>First </h1>
+
+<ul>
+  {% for x in fruits %}
+    <li
+      {% if forloop.first %}
+        style='background-color:lightblue;'
+      {% endif %}
+    >{{ x }}</li>
+  {% endfor %}
+</ul> 
+
+<h1>Last</h1>
+<ul>
+  {% for x in fruits %}
+    <li
+      {% if forloop.last %}
+        style='background-color:lightblue;'
+      {% endif %}
+    >{{ x }}</li>
+  {% endfor %}
+</ul> 
+
+<h1>Rev counter</h1>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.revcounter }}</li>
+  {% endfor %}
+</ul> 
+
+
+<h1>Rev counter 0 </h1>
+
+<ul>
+  {% for x in fruits %}
+    <li>{{ forloop.revcounter0 }}</li>
+  {% endfor %}
+</ul> 
+
+<h1>Is Changed</h1>
+
+
+{% for x in fruits %}
+  {% ifchanged %}
+    <p>New value: {{ x }}</p>
+  {% else %}
+    <p>Same value: {{ x }}</p>
+  {% endifchanged %}
+{% endfor %}

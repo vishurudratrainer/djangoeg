@@ -16,6 +16,10 @@ def varintemplate(request):
   return HttpResponse(template.render())
 
 
+def includeeg(request):
+  template = loader.get_template('includeg.html')
+  return HttpResponse(template.render())
+
 def listtest(request):
   template = loader.get_template('list.html')
   context = {
@@ -32,10 +36,20 @@ def ifelseeg(request):
   }
   return HttpResponse(template.render(context, request))  
 
+
+
+def forloopvariables(request):
+  template = loader.get_template('forloopvariables.html')
+  context = {
+    'fruits': ['Apple', 'Banana', 'Cherry', 'Oranges', 'Kiwi'],   
+  }
+  return HttpResponse(template.render(context, request))  
+
+
 def fornested(request):
   template = loader.get_template('fornested.html')
   context = {
-      "emptytestobject":[{}],
+      "emptytestobject":[],
    'members':[
   {
     'id': 1,

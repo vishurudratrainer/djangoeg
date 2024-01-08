@@ -11,6 +11,16 @@ def sample(request):
 
 
 from .models import Member
+from django.views.decorators.csrf import csrf_exempt
+import json
+@csrf_exempt
+def saveMember(request):
+    data = json.loads(request.body.decode("utf-8"))
+
+    print(data)
+    member = Member(firstname=data.get('firstname'), lastname=data.get('lastname'))
+    member.save()
+    return HttpResponse("Saved!")
 
 def allmembers(request):
   mymembers = Member.objects.all().values()

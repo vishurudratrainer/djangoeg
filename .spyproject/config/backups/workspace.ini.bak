@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['hw\\members\\urls.py', 'hw\\hw\\urls.py', 'hw\\members\\templates\\sample.html', 'hw\\members\\views.py', 'hw\\hw\\settings.py', 'hw\\members\\models.py', 'hw\\members\\templates\\all_members.html', 'hw\\members\\templates\\details.html']
+recent_files = ['hw\\master\\views.py', 'hw\\master\\templates\\main.html', 'hw\\master\\urls.py', 'hw\\master\\templates\\404.html', 'hw\\master\\templates\\template.html', 'hw\\hw\\settings.py', 'hw\\templateeg\\templates\\variable.html', 'hw\\templateeg\\urls.py', 'hw\\templateeg\\views.py', 'hw\\members\\views.py', 'hw\\templateeg\\templates\\varintemplate.html', 'hw\\templateeg\\templates\\list.html', 'hw\\templateeg\\templates\\ifelseeg.html', 'hw\\hw\\urls.py', 'hw\\templateeg\\templates\\fornested.html']
 

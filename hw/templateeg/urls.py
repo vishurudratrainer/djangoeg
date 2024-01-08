@@ -14,5 +14,7 @@ urlpatterns = [
     path('listtest/', views.listtest, name='listtest'),
     path('ifelseeg/', views.ifelseeg, name='ifelseeg'),
     path('fornested/', views.fornested, name='fornested'),
+    path('forloopvariables/', views.forloopvariables, name='forloopvariables'),
+    path('includeeg/', views.includeeg, name='includeeg'),
 
 ]

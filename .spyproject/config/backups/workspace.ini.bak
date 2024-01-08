@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = []
+recent_files = ['hw\\members\\urls.py', 'hw\\hw\\urls.py', 'hw\\members\\templates\\sample.html', 'hw\\members\\views.py', 'hw\\hw\\settings.py', 'hw\\members\\models.py', 'hw\\members\\templates\\all_members.html', 'hw\\members\\templates\\details.html']
 
